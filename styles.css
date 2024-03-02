@@ -42,7 +42,7 @@ body{
     margin: -75px auto 0;
 }
 
-.main-container__s1__title{
+.main-container__s2__title{
     margin: 24px 0 30px;
     font-size: 2.6em;
     text-align: center;
@@ -73,7 +73,10 @@ body{
     right: 5px;
     transition: 300ms; /*Para el cambio de la flecha*/
 }
-
+.main-container__s2__line{
+    border-color: transparent;
+    border-bottom-color: var(--lightGrayishBlue);
+}
 .main-container__s2__details__sumary__p{
     color: var(--darkGrayishBlue);
     font-weight: 400;
@@ -89,4 +92,41 @@ body{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/*-------------Desktop---------*/
+
+@media (min-width: 1044px){
+ 
+    .main-container{
+    width: 924px;
+    display: flex;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-position-x: -536px;
+    background-position-y: -281px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+ }
+ .main-container__s1, .main-container__s2{
+    width: 100%;
+
+ }
+ .main-container__s1__image{
+    width: 474px;
+    margin: 67px 0 0 -130px; /*Arriba Derecha Abajo Izquierda*/
+ }
+ .main-container__s1__image--shadow{
+    content: ''; /*Resetea a su valor original*/
+ }
+ .main-container__s2{
+    padding: 15px 80px 20px 40px;
+ }
+ .main-container__s2__title{
+    text-align: left;
+    margin-bottom: 32px;
+ }
+ .main-container__s2__details{
+    margin: 26px 0;
+ }
+ 
 }
